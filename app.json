@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "CitizenApp",
+    "slug": "citizen",
+    "version": "7.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "plugins": [
+        [
+          "expo-image-picker",
+          {
+            "photosPermission": "Allow $(PRODUCT_NAME) to access your photos and videos to share your findings with citizens.",
+            "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to share your findings with citizens.",
+            "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone to share your findings with citizens."
+          }
+        ]
+      ]
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.citizenJustice",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access your camera to share your findings with citizens.",
+        "NSPhotoLibraryUsageDescription":"Allow $(PRODUCT_NAME) to access your photos and videos to share your findings with citizens.",
+        "NSMicrophoneUsageDescription":"Allow $(PRODUCT_NAME) to access your microphone to share your findings with citizens."
+      
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.CitizenApp",
+      "versionCode": 24
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fd030494-9e49-4f08-9a4c-feae0b31468d"
+      }
+    }
+  }
+}
